@@ -1,0 +1,24 @@
+<configuration>
+   <input>
+     <net-file value="ngsim1.net.xml"/>
+     <route-files value="my_route1.rou.xml"/>
+   </input>
+   <time>
+     <begin value="0"/>
+     <end value="1000"/>
+     <step-length value="0.1"/>
+   </time>
+   <gui_only>
+     <start value="t"/>
+     <quit-on-end value="t"/>
+   </gui_only>
+   <processing>
+		<lanechange.duration value="1"/>
+   </processing>
+   <output>
+		<write-license value="true"/>
+		<tripinfo-output value="../dataset_generation/tripinfos.xml"/>
+		<fcd-output value="../dataset_generation/fcd.xml"/>
+	</output>
+</configuration>
+
